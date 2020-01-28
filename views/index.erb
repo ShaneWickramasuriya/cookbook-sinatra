@@ -1,0 +1,14 @@
+
+
+<h1><%= Time.now %></h1>
+
+
+
+
+<% @recipes.each do |recipe| %>
+  <li>
+    <%= recipe.name %>
+  </li>
+<% end %>
+
+<a href="/new">Create new recipe</a>
